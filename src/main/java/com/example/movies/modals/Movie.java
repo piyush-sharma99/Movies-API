@@ -31,6 +31,8 @@ public class Movie {
     private List<String> backdrops;
     @DocumentReference
     private List<Review> reviewIds;
+    @DocumentReference
+    private List<Rating> ratingIds;
     //The above can be an embedded relationship which means all reviews will be added to movies collection under each movie (So the revieIds will be a list of reviews)
     //Or we use @DocumentReference which will create a new collection and store reviews there. Only Ids will be stored in the above array
 
